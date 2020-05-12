@@ -15,7 +15,7 @@
 
 <body>
 
-	<header class="header">
+	<header class="header" id="header">
 		<div class="header-top">
 			<div class="container">
 				<div class="header-top__inner">
@@ -64,22 +64,22 @@
 					<nav class="header-menu__nav">
 						<ul class="header-menu__list">
 							<li class="header-menu__line">
-								<a class="header-menu__link" href="#">Главная</a>
+								<a class="header-menu__link" href="#" data-scroll="#header">Главная</a>
 							</li>
 							<li class="header-menu__line">
-								<a class="header-menu__link" href="#">О Компании</a>
+								<a class="header-menu__link" href="#" data-scroll="#company">О Компании</a>
 							</li>
 							<li class="header-menu__line">
-								<a class="header-menu__link" href="#">Услуги</a>
+								<a class="header-menu__link" href="#" data-scroll="#services">Услуги</a>
 							</li>
 							<li class="header-menu__line">
-								<a class="header-menu__link" href="#">Проекты</a>
+								<a class="header-menu__link" href="#" data-scroll="#projects">Проекты</a>
 							</li>
 							<li class="header-menu__line">
-								<a class="header-menu__link" href="#">Отзывы</a>
+								<a class="header-menu__link" href="#" data-scroll="#reviews">Отзывы</a>
 							</li>
 							<li class="header-menu__line">
-								<a class="header-menu__link" href="#">Контакты</a>
+								<a class="header-menu__link" href="#" data-scroll="#contacts">Контакты</a>
 							</li>
 						</ul>
 					</nav>
@@ -94,7 +94,8 @@
 		</div>
 	</header>
 
-	<section class="main-screen">
+
+	<section class="main-screen" id="top">
 		<div class="container">
 			<div class="main-screen__subtitle">Мы Опытные Инженеры и Мастера Своего Дела</div>
 			<h1 class="main-screen__title">
@@ -112,7 +113,8 @@
 		</div>
 	</section>
 
-	<section class="company">
+
+	<section class="company" id="company">
 		<div class="container">
 			<div class="company__content">
 				<div class="company-descr">
@@ -134,7 +136,8 @@
 		</div>
 	</section>
 
-	<section class="qualities">
+
+	<section class="qualities" id="qualities">
 		<div class="container">
 			<div class="qualities__title title">Почему выбирают нас?</div>
 			<div class="qualities__subtitle text">Более двенадцати лет наша компания реализовывала самые разнообразные
@@ -151,7 +154,8 @@
 						</div>
 					</div>
 					<div class="qualities-item__title">Надежность и стабильность</div>
-					<div class="qualities-item__text text">А значит: в нашем активе нет ни одного долгостроя, все наши объекты
+					<div class="qualities-item__text text">А значит: в нашем активе нет ни одного долгостроя, все наши
+						объекты
 						строятся активными темпами и сдаются в запланированный срок.</div>
 				</div>
 				<div class="qualities-item">
@@ -161,7 +165,8 @@
 						</div>
 					</div>
 					<div class="qualities-item__title">Прозрачность и открытость</div>
-					<div class="qualities-item__text text">А значит: наличие всей предусмотренной законом разрешительной документации, доступ к актуальной информации о компании.</div>
+					<div class="qualities-item__text text">А значит: наличие всей предусмотренной законом разрешительной
+						документации, доступ к актуальной информации о компании.</div>
 				</div>
 				<div class="qualities-item">
 					<div class="qualities-item__wrapper">
@@ -170,7 +175,8 @@
 						</div>
 					</div>
 					<div class="qualities-item__title">Стремление стать лучшими</div>
-					<div class="qualities-item__text text">А значит: мы дорожим своей репутацией и мнением наших клиентов, ценим их потребности и стараемся максимально их удовлетворить.</div>
+					<div class="qualities-item__text text">А значит: мы дорожим своей репутацией и мнением наших клиентов,
+						ценим их потребности и стараемся максимально их удовлетворить.</div>
 				</div>
 				<div class="qualities-item">
 					<div class="qualities-item__wrapper">
@@ -179,14 +185,16 @@
 						</div>
 					</div>
 					<div class="qualities-item__title">Инвестиционная выгода</div>
-					<div class="qualities-item__text text">А значит: доступные цены и гибкие условия покупки, ликвидные объекты, которые в дальнейшем будут только повышаться в цене.</div>
+					<div class="qualities-item__text text">А значит: доступные цены и гибкие условия покупки, ликвидные
+						объекты, которые в дальнейшем будут только повышаться в цене.</div>
 				</div>
 
 			</div>
 		</div>
 	</section>
 
-	<section class="services">
+
+	<section class="services" id="services">
 		<div class="container">
 			<div class="services__title title">Наши Услуги</div>
 			<div class="services__content">
@@ -194,25 +202,296 @@
 				<div class="services-item">
 					<div class="services-item__image" style="background-image: url(/images/serv-1.jpg);"></div>
 					<div class="services-item__title title">Общестроительные работы</div>
-					<div class="services-item__text text">Наша компания за годы существования значительно расширила спектр предоставляемых услуг и видов работ за счет создания новых подразделений занимающихся отдельными профильными общестроительными работами. Мы проводим работы по монтажу блоков ФБС и перекрытий, устройству кладки газо и пеноблоков и кирпичной, изготовлению и монтажу металлических конструкций, монтажу скатных кровель с устройством стропильных систем. </div>
+					<div class="services-item__text text">Наша компания за годы существования значительно расширила спектр
+						предоставляемых услуг и видов работ за счет создания новых подразделений занимающихся отдельными
+						профильными общестроительными работами. Мы проводим работы по монтажу блоков ФБС и перекрытий,
+						устройству кладки газо и пеноблоков и кирпичной, изготовлению и монтажу металлических конструкций,
+						монтажу скатных кровель с устройством стропильных систем. </div>
 					<a class="services-item__btn button" href="#">Подробнее</a>
 				</div>
 				<div class="services-item">
 					<div class="services-item__image" style="background-image: url(/images/serv-2.jpg);"></div>
 					<div class="services-item__title title">Генеральный подряд</div>
-					<div class="services-item__text text">За считанные дни мы сможем организовать работу всех подразделений нашей компании и субподрядчиков на вашей строительной площадке, быстро выполняя даже самые сложные технические решения и большие объемы работ. Квалифицированный инженерно технический состав компании максимально интегрирован со всеми проверенными годами субподрядными организациями, что позволяет быстро и качественно решать задачи с наибольшей производительностью. </div>
+					<div class="services-item__text text">За считанные дни мы сможем организовать работу всех подразделений
+						нашей компании и субподрядчиков на вашей строительной площадке, быстро выполняя даже самые сложные
+						технические решения и большие объемы работ. Квалифицированный инженерно технический состав компании
+						максимально интегрирован со всеми проверенными годами субподрядными организациями, что позволяет
+						быстро и качественно решать задачи с наибольшей производительностью. </div>
 					<a class="services-item__btn button" href="#">Подробнее</a>
 				</div>
 				<div class="services-item">
 					<div class="services-item__image" style="background-image: url(/images/serv-3.jpg);"></div>
 					<div class="services-item__title title">Реконструкция и ремонт</div>
-					<div class="services-item__text text">Мы полностью изменяем здание, в результате чего оно приобретает абсолютно новый внешний вид, улучшаются его эксплуатационные характеристики под каждый вид деятельности. Кроме изменения внешнего и внутреннего облика, мы можем предложить изменение его прямого назначения, из производственного в офисный, или складского в торговый и т. д. Реконструкция зданий от нашей компании гарантирует высокие технико-экономические показатели измененных сооружений. </div>
+					<div class="services-item__text text">Мы полностью изменяем здание, в результате чего оно приобретает
+						абсолютно новый внешний вид, улучшаются его эксплуатационные характеристики под каждый вид
+						деятельности. Кроме изменения внешнего и внутреннего облика, мы можем предложить изменение его прямого
+						назначения, из производственного в офисный, или складского в торговый и т. д. Реконструкция зданий от
+						нашей компании гарантирует высокие технико-экономические показатели измененных сооружений. </div>
 					<a class="services-item__btn button" href="#">Подробнее</a>
 				</div>
 
 			</div>
 		</div>
 	</section>
+
+	<section class="projects" id="projects">
+		<div class="container">
+			<div class="projects__title title">Наши проекты</div>
+			<div class="projects__text text">Любое новое здание или постройка должны соответствовать строительным нормам и
+				техническим характеристикам, грамотно юридически оформлены, безопасны для эксплуатации, людей и окружающей
+				среды. Именно поэтому, перед заказчиком на стадии планирования строительства остро встает вопрос выбора
+				достойной организации.
+			</div>
+			<div class="projects__content">
+				<div class="projects__menu">
+					<button class="projects__menu-btn menu-btn active" type="button" data-id="1">Все Проекты</button>
+					<button class="projects__menu-btn menu-btn" type="button" data-id="2">Реализованные</button>
+					<button class="projects__menu-btn menu-btn" type="button" data-id="3">Текущие</button>
+				</div>
+				<div class="projects-gallery">
+					<div class="projects-gallery__item" id="1">
+						<div class="projects-gallery__img gallery__img"
+							style="background-image: url(/images/project/project-1.jpg);">
+							<div class="gallery__img-text">Многоквартирный жилой дом.15 эт. Троещина 2</div>
+						</div>
+						<div class="projects-gallery__img gallery__img"
+							style="background-image: url(/images/project/project-2.jpg);">
+							<span class="gallery__img-text">ЖК Лебединый.27 эт. ст.метро "Харьковская"</span>
+						</div>
+						<div class="projects-gallery__img gallery__img"
+							style="background-image: url(/images/project/project-3.jpg);">
+							<span class="gallery__img-text">Многоквартирный жилой дом.15 эт. Троещина 2</span>
+						</div>
+						<div class="projects-gallery__img gallery__img"
+							style="background-image: url(/images/project/project-4.jpg);">
+							<span class="gallery__img-text">ЖК Лебединый.27 эт. ст.метро "Харьковская"</span>
+						</div>
+						<div class="projects-gallery__img gallery__img"
+							style="background-image: url(/images/project/project-5.jpg);">
+							<span class="gallery__img-text">ЖК Лебединый.27 эт. ст.метро "Харьковская"</span>
+						</div>
+						<div class="projects-gallery__img gallery__img"
+							style="background-image: url(/images/project/project-6.jpg);">
+							<span class="gallery__img-text">Многоквартирный жилой дом.15 эт. Троещина 2</span>
+						</div>
+						<div class="projects-gallery__img gallery__img"
+							style="background-image: url(/images/project/project-7.jpg);">
+							<span class="gallery__img-text">ЖК Лебединый.27 эт. ст.метро "Харьковская"</span>
+						</div>
+						<div class="projects-gallery__img gallery__img"
+							style="background-image: url(/images/project/project-8.jpg);">
+							<span class="gallery__img-text">Многоквартирный жилой дом.15 эт. Троещина 2</span>
+						</div>
+					</div>
+					<div class="projects-gallery__item" id="2">
+						<div class="projects-gallery__img gallery__img"
+							style="background-image: url(/images/project/project-1.jpg);">
+							<span class="gallery__img-text">ЖК Лебединый.27 эт. ст.метро "Харьковская"</span>
+						</div>
+						<div class="projects-gallery__img gallery__img"
+							style="background-image: url(/images/project/project-2.jpg);">
+							<span class="gallery__img-text">Многоквартирный жилой дом.15 эт. Троещина 2</span>
+						</div>
+						<div class="projects-gallery__img gallery__img"
+							style="background-image: url(/images/project/project-3.jpg);">
+							<span class="gallery__img-text">ЖК Лебединый.27 эт. ст.метро "Харьковская"</span>
+						</div>
+						<div class="projects-gallery__img gallery__img"
+							style="background-image: url(/images/project/project-4.jpg);">
+							<span class="gallery__img-text">ЖК Лебединый.27 эт. ст.метро "Харьковская"</span>
+						</div>
+					</div>
+					<div class="projects-gallery__item" id="3">
+						<div class="projects-gallery__img gallery__img"
+							style="background-image: url(/images/project/project-5.jpg);">
+							<span class="gallery__img-text">Многоквартирный жилой дом.15 эт. Троещина 2</span>
+						</div>
+						<div class="projects-gallery__img gallery__img"
+							style="background-image: url(/images/project/project-6.jpg);">
+							<span class="gallery__img-text">ЖК Лебединый.27 эт. ст.метро "Харьковская"</span>
+						</div>
+						<div class="projects-gallery__img gallery__img"
+							style="background-image: url(/images/project/project-7.jpg);">
+							<span class="gallery__img-text">Многоквартирный жилой дом.15 эт. Троещина 2</span>
+						</div>
+						<div class="projects-gallery__img gallery__img"
+							style="background-image: url(/images/project/project-8.jpg);">
+							<span class="gallery__img-text">ЖК Лебединый.27 эт. ст.метро "Харьковская"</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+	</section>
+
+	<section class="reviews" id="reviews">
+		<div class="container">
+			<div class="reviews__title title">Отзывы наших клиентов</div>
+			<div class="reviews__subtitle text">Мы дорожим своей репутацией и мнением наших клиентов, ценим их потребности
+				и стараемся максимально их удовлетворить, придерживаемся самых высоких стандартов в качестве обслуживания и
+				постоянно совершенствуем нашу работу и сервис.</div>
+		</div>
+
+		<div class="reviews__slider">
+
+			<div class="slider-item">
+				<div class="slider-item__top">
+					<div class="slider-item__text">Имея горький опыт сотрудничества с ремонтной бригадой, где ничего не
+						докажешь, постоянная выкачка денег, решила сотрудничать с компанией и не пожалела. Ребята пришли,
+						посмотрели, все посчитали, кое-что посоветовали, составили смету. Рекомендую всем</div>
+				</div>
+				<div class="slider-item__photo" style="background-image: url(/images/author-1.png);"></div>
+				<div class="slider-item__name">Карина</div>
+			</div>
+			<div class="slider-item">
+				<div class="slider-item__top">
+					<div class="slider-item__text">Отличная компания. Сделали все в срок и даже на 3 дня раньше. Сначала
+						показалось дорого, но потом поняла, что за ремонт такого уровня это не дорого. Очень подкупает
+						официальное заключение договора, оплата по безналу. Мало кто так работает.Рекомендую всем</div>
+				</div>
+				<div class="slider-item__photo" style="background-image: url(/images/author-2.png);"></div>
+				<div class="slider-item__name">Артём</div>
+			</div>
+			<div class="slider-item">
+				<div class="slider-item__top">
+					<div class="slider-item__text">Имея горький опыт сотрудничества с ремонтной бригадой, где ничего не
+						докажешь, постоянная выкачка денег, решила сотрудничать с компанией и не пожалела. Ребята пришли,
+						посмотрели, все посчитали, кое-что посоветовали, составили смету.Рекомендую всем</div>
+				</div>
+				<div class="slider-item__photo" style="background-image: url(/images/author-1.png);"></div>
+				<div class="slider-item__name">Карина</div>
+			</div>
+			<div class="slider-item">
+				<div class="slider-item__top">
+					<div class="slider-item__text">Отличная компания. Сделали все в срок и даже на 3 дня раньше. Сначала
+						показалось дорого, но потом поняла, что за ремонт такого уровня это не дорого. Очень подкупает
+						официальное заключение договора, оплата по безналу. Мало кто так работает.Рекомендую всем</div>
+				</div>
+				<div class="slider-item__photo" style="background-image: url(/images/author-2.png);"></div>
+				<div class="slider-item__name">Артём</div>
+			</div>
+
+		</div>
+		<div class="contacts" id="contacts">
+			<div class="contacts__inner">
+				<div class="container">
+					<div class="contacts__content">
+						<div class="contacts__text">
+							<div class="contacts__title title">У Вас Остались Вопросы?</div>
+							<div class="contacts__subtitle">С Радостью Ответим<strong>!</strong> </div>
+						</div>
+						<form action="" class="contacts__form">
+							<input class="contacts__input" type="text" placeholder="Имя">
+							<input class="contacts__input" type="email" placeholder="E-Mail">
+							<textarea class="contacts__textarea" name="" id="" cols="30" rows="10"
+								placeholder="Сообщение"></textarea>
+							<button class="contacts__btn button" type="submit">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer-item">
+					<div class="footer-item__title">О Компании</div>
+					<div class="footer-item__logo">
+						<img src="images/logo-1.png" alt="">
+					</div>
+					<div class="footer-item__text">Наш портфель это десятки реализованных проектов по всей стране, от ремонта офиса в 100 м² до реконструкции зданий в 6 000 м². За период существования мы зарекомендовали себя как опытная компания, отличающаяся профессионализмом и высоким качеством производимых работ.</div>
+					<div class="footer-item__socials">
+						<ul class="social">
+							<li class="social__line">
+								<a class="social__icon icon-facebook-f" href="#"></a>
+							</li>
+							<li class="social__line">
+								<a class="social__icon icon-twitter" href="#"></a>
+							</li>
+							<li class="social__line">
+								<a class="social__icon icon-dribbble" href="#"></a>
+							</li>
+							<li class="social__line">
+								<a class="social__icon icon-linkedin" href="#"></a>
+							</li>
+							<li class="social__line">
+								<a class="social__icon icon-youtube-play" href="#"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-item">
+					<div class="footer-item__title">Меню</div>
+					<ul class="footer-item__menu">
+						<li class="footer-item__line">
+							<a class="footer-item__link" href="#">Наши Услуги</a>
+						</li>
+						<li class="footer-item__line">
+							<a class="footer-item__link" href="#">Наша Команда</a>
+						</li>
+						<li class="footer-item__line">
+							<a class="footer-item__link" href="#">Форум</a>
+						</li>
+						<li class="footer-item__line">
+							<a class="footer-item__link" href="#">Лицензии</a>
+						</li>
+						<li class="footer-item__line">
+							<a class="footer-item__link" href="#">Новости</a>
+						</li>
+						<li class="footer-item__line">
+							<a class="footer-item__link" href="#">Контактный Центр</a>
+						</li>
+						<li class="footer-item__line">
+							<a class="footer-item__link" href="#">Карта Сайта</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-item">
+					<div class="footer-item__title">Объявления</div>
+					<div class="footer-item__post">
+						<div class="footer-item__date">20 <span>Авг</span></div>
+						<div class="footer-item__news">Наша компания приступила к реализации проекта реконструкции офисного центра</div>
+					</div>
+					<div class="footer-item__post">
+						<div class="footer-item__date">7 <span>Июн</span></div>
+						<div class="footer-item__news">Начаты работы по реконструкции склада под офисное помещение"</div>
+					</div>
+					<div class="footer-item__post">
+						<div class="footer-item__date">15 <span>Май</span></div>
+						<div class="footer-item__news">Начало работ на объекте: ЖК "Сан-Франциско"</div>
+					</div>
+					<div class="footer-item__post">
+						<div class="footer-item__date">20 <span>Мар</span></div>
+						<div class="footer-item__news">Наша компания приступила к реализации проекта реконструкции офисного центра"</div>
+					</div>
+					<div class="footer-item__post">
+						<div class="footer-item__date">3 <span>Мар</span></div>
+						<div class="footer-item__news">Начало работ на объекте: ЖК "Сан-Франциско"</div>
+					</div>
+				</div>
+				<div class="footer-item">
+					<div class="footer-item__title">Контакты</div>
+					<a class="footer-item__phone" href="#">
+						<i class="footer-item__icon icon-mobile"></i>
+						+38(073)1110099
+					</a>
+					<a class="footer-item__mail" href="#">
+						<i class="footer-item__icon icon-envelope"></i>
+						atlantstroy@gmail.com
+					</a>
+					<div class="footer-item__adress">
+						<i class="footer-item__icon icon-map-marker"></i>
+						бульвар Степана Бандеры, 111, Киев 02094, Украина
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
