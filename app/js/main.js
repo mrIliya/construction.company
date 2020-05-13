@@ -24,8 +24,32 @@ $(function () {
 		arrows: false,
 		autoplay: true,
 		autoplaySpeed: 2000,
-		pauseOnHover: true
+		pauseOnHover: true,
+		responsive: [
+			{
+				breakpoint: 1000,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '20px',
+					arrows: false,
+					autoplay: false,
+				}
+			},
+			{
+				breakpoint: 650,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: false,
+					autoplay: false,
+				}
+			}
+		]
 	});
+
+
 
 	$("[data-scroll]").on('click', function () {
 		event.preventDefault();
@@ -58,12 +82,12 @@ $(function () {
 
 	});
 
-	$('.menu-burger__btn').on('click', function () { 
+	$('.menu-burger__btn').on('click', function () {
 		$(this).toggleClass('active');
 
 		$('.menu-burger').toggleClass('active');
 
-		
+
 	});
 
 });

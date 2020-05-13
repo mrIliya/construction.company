@@ -56,6 +56,28 @@
 			</div>
 		</div>
 		<div class="header-menu">
+			<div class="menu-burger">
+				<ul class="menu-burger__list">
+					<li class="menu-burger__line">
+						<a class="menu-burger__link" href="#" data-scroll="#header">Главная</a>
+					</li>
+					<li class="menu-burger__line">
+						<a class="menu-burger__link" href="#" data-scroll="#company">О Компании</a>
+					</li>
+					<li class="menu-burger__line">
+						<a class="menu-burger__link" href="#" data-scroll="#services">Услуги</a>
+					</li>
+					<li class="menu-burger__line">
+						<a class="menu-burger__link" href="#" data-scroll="#projects">Проекты</a>
+					</li>
+					<li class="menu-burger__line">
+						<a class="menu-burger__link" href="#" data-scroll="#reviews">Отзывы</a>
+					</li>
+					<li class="menu-burger__line">
+						<a class="menu-burger__link" href="#" data-scroll="#contacts">Контакты</a>
+					</li>
+				</ul>
+			</div>
 			<div class="container">
 				<div class="header-menu__inner">
 					<div class="header-menu__logo">
@@ -93,28 +115,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="menu-burger">
-			<ul class="menu-burger__list">
-				<li class="menu-burger__line">
-					<a class="menu-burger__link" href="#">Главная</a>
-				</li>
-				<li class="menu-burger__line">
-					<a class="menu-burger__link" href="#">О Компании</a>
-				</li>
-				<li class="menu-burger__line">
-					<a class="menu-burger__link" href="#">Услуги</a>
-				</li>
-				<li class="menu-burger__line">
-					<a class="menu-burger__link" href="#">Проекты</a>
-				</li>
-				<li class="menu-burger__line">
-					<a class="menu-burger__link" href="#">Отзывы</a>
-				</li>
-				<li class="menu-burger__line">
-					<a class="menu-burger__link" href="#">Контакты</a>
-				</li>
-			</ul>
-		</div>
 	</header>
 
 
@@ -137,7 +137,7 @@
 	</section>
 
 
-	<!-- <section class="company" id="company">
+	<section class="company" id="company">
 		<div class="container">
 			<div class="company__content">
 				<div class="company-descr">
@@ -160,7 +160,7 @@
 	</section>
 
 
-	<section class="qualities" id="qualities">
+	<section class="qualities">
 		<div class="container">
 			<div class="qualities__title title">Почему выбирают нас?</div>
 			<div class="qualities__subtitle text">Более двенадцати лет наша компания реализовывала самые разнообразные
@@ -416,7 +416,7 @@
 		</div>
 	</section>
 
-	<footer class="footer">
+	 <footer class="footer">
 		<div class="container">
 			<div class="footer__inner">
 				<div class="footer-item">
@@ -424,7 +424,9 @@
 					<div class="footer-item__logo">
 						<img src="images/logo-1.png" alt="">
 					</div>
-					<div class="footer-item__text">Наш портфель это десятки реализованных проектов по всей стране, от ремонта офиса в 100 м² до реконструкции зданий в 6 000 м². За период существования мы зарекомендовали себя как опытная компания, отличающаяся профессионализмом и высоким качеством производимых работ.</div>
+					<div class="footer-item__text">Наш портфель это десятки реализованных проектов по всей стране, от ремонта
+						офиса в 100 м² до реконструкции зданий в 6 000 м². За период существования мы зарекомендовали себя как
+						опытная компания, отличающаяся профессионализмом и высоким качеством производимых работ.</div>
 					<div class="footer-item__socials">
 						<ul class="social">
 							<li class="social__line">
@@ -445,37 +447,55 @@
 						</ul>
 					</div>
 				</div>
-				<div class="footer-item">
-					<div class="footer-item__title">Меню</div>
-					<ul class="footer-item__menu">
-						<li class="footer-item__line">
-							<a class="footer-item__link" href="#">Наши Услуги</a>
-						</li>
-						<li class="footer-item__line">
-							<a class="footer-item__link" href="#">Наша Команда</a>
-						</li>
-						<li class="footer-item__line">
-							<a class="footer-item__link" href="#">Форум</a>
-						</li>
-						<li class="footer-item__line">
-							<a class="footer-item__link" href="#">Лицензии</a>
-						</li>
-						<li class="footer-item__line">
-							<a class="footer-item__link" href="#">Новости</a>
-						</li>
-						<li class="footer-item__line">
-							<a class="footer-item__link" href="#">Контактный Центр</a>
-						</li>
-						<li class="footer-item__line">
-							<a class="footer-item__link" href="#">Карта Сайта</a>
-						</li>
-					</ul>
+				<div class="footer__menu">
+					<div class="footer-item">
+						<div class="footer-item__title">Меню</div>
+						<ul class="footer-item__menu">
+							<li class="footer-item__line">
+								<a class="footer-item__link" href="#">Наши Услуги</a>
+							</li>
+							<li class="footer-item__line">
+								<a class="footer-item__link" href="#">Наша Команда</a>
+							</li>
+							<li class="footer-item__line">
+								<a class="footer-item__link" href="#">Форум</a>
+							</li>
+							<li class="footer-item__line">
+								<a class="footer-item__link" href="#">Лицензии</a>
+							</li>
+							<li class="footer-item__line">
+								<a class="footer-item__link" href="#">Новости</a>
+							</li>
+							<li class="footer-item__line">
+								<a class="footer-item__link" href="#">Контактный Центр</a>
+							</li>
+							<li class="footer-item__line">
+								<a class="footer-item__link" href="#">Карта Сайта</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-item footer__contacts-menu">
+						<div class="footer-item__title">Контакты</div>
+						<a class="footer-item__phone" href="#">
+							<i class="footer-item__icon icon-mobile"></i>
+							+38(073)1110099
+						</a>
+						<a class="footer-item__mail" href="#">
+							<i class="footer-item__icon icon-envelope"></i>
+							atlantstroy@gmail.com
+						</a>
+						<div class="footer-item__adress">
+							<i class="footer-item__icon icon-map-marker"></i>
+							бульвар Степана Бандеры, 111, Киев 02094, Украина
+						</div>
+					</div>
 				</div>
 				<div class="footer-item">
 					<div class="footer-item__title">Объявления</div>
 					<div class="footer-item__post">
 						<div class="footer-item__date">20 <span>Авг</span></div>
-						<div class="footer-item__news">Наша компания приступила к реализации проекта реконструкции офисного центра</div>
+						<div class="footer-item__news">Наша компания приступила к реализации проекта реконструкции офисного
+							центра</div>
 					</div>
 					<div class="footer-item__post">
 						<div class="footer-item__date">7 <span>Июн</span></div>
@@ -487,14 +507,15 @@
 					</div>
 					<div class="footer-item__post">
 						<div class="footer-item__date">20 <span>Мар</span></div>
-						<div class="footer-item__news">Наша компания приступила к реализации проекта реконструкции офисного центра"</div>
+						<div class="footer-item__news">Наша компания приступила к реализации проекта реконструкции офисного
+							центра"</div>
 					</div>
 					<div class="footer-item__post">
 						<div class="footer-item__date">3 <span>Мар</span></div>
 						<div class="footer-item__news">Начало работ на объекте: ЖК "Сан-Франциско"</div>
 					</div>
 				</div>
-				<div class="footer-item">
+				<div class="footer-item footer__contacts">
 					<div class="footer-item__title">Контакты</div>
 					<a class="footer-item__phone" href="#">
 						<i class="footer-item__icon icon-mobile"></i>
@@ -511,7 +532,7 @@
 				</div>
 			</div>
 		</div>
-	</footer> -->
+	</footer> 
 
 
 
