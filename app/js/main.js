@@ -58,5 +58,12 @@ $(function () {
 
 	});
 
+	$('.menu-burger__btn').on('click', function () { 
+		$(this).toggleClass('active');
+
+		$('.menu-burger').toggleClass('active');
+
+		
+	});
 
 });
