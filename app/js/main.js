@@ -1,7 +1,7 @@
 $(function () {
 
 	$('.projects__content .menu-btn').on('click', function (event) {
-		var id = $(this).attr('data-id');
+		let id = $(this).attr('data-id');
 
 		$('.projects-gallery').find('.projects-gallery__item').removeClass('active').hide();
 
@@ -81,13 +81,14 @@ $(function () {
 		} else { menu.removeClass('fixed'); }
 
 	});
+	
 
 	$('.menu-burger__btn').on('click', function () {
 		$(this).toggleClass('active');
 
 		$('.menu-burger').toggleClass('active');
 
-
 	});
+
 
 });

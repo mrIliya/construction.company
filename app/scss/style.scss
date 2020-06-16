@@ -145,15 +145,10 @@ body {
       top: 0;
       background-color: rgba(34, 37, 51, .9);
 		z-index: 1000;
-		opacity: 0.1;
-		
-		&:hover{
-			opacity: 1;
-		}
 
       .header-menu__inner {
          min-height: 60px;
-      }
+		}
    }
 
    &__inner {
@@ -223,7 +218,7 @@ body {
       position: absolute;
       right: -30px;
       width: 0;
-      transition: all 1s;
+      transition: all .5s;
       padding: 0 15px;
       outline: transparent;
 
@@ -238,19 +233,33 @@ body {
 
 .menu-burger {
    position: absolute;
-   top: -400%;
+   top: -1000%;
    left: 0;
    width: 100%;
    background-color: rgba(255, 255, 255, 0);
-   z-index: 100;
    text-align: center;
 	height: 0;
-	transition: all 1s;
+	transition: all .7s;
 	display: none;
+	opacity: 0;
 	
 	&.active{
 		background-color: #fff;
 		top: 0;
+		opacity: 1;
+		z-index: 101;
+		.menu-burger__list{
+			top: 0;
+			z-index: 100;
+		}
+	}
+
+	span{
+		font-size: 30px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		margin-bottom: 20px;
 	}
 
    &__btn {
@@ -295,25 +304,34 @@ body {
    }
 
    &__list {
-      border: 20px solid rgba(255, 203, 15, .7);
-      border-left: none;
-      border-right: none;
-      background-color: rgba(245, 237, 196, 1);
-      
+      border-bottom: 20px solid $bg-dark;;
+		background-color: rgba(245, 237, 196, 1);
+		padding: 20px 0 70px 0;
+		width: 100%;
+		position: absolute;		
+		top: -1000%;
+		left: 0;
+		z-index: -1;
+		border-radius: 0 0 50px 50px;
    }
 
    &__line {
-      height: 20px;
+      height: 50px;
 
       &+li {
          margin: 15px 0 0 0;
-      }
+		}
+		
+		&:first-child{
+			height: 70px;
+		}
    }
 
    &__link {
       font-size: 20px;
       color: $text-dark;
-      text-transform: uppercase;
+		text-transform: uppercase;
+		font-weight: 700;
    }
 }
 

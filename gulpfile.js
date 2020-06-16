@@ -23,7 +23,7 @@ gulp.task('style', function () {
 	return gulp.src([
 		'node_modules/normalize.css/normalize.css',
 		'node_modules/slick-carousel/slick/slick.css',
-		'node_modules/swiper/css/swiper.css'
+		'node_modules/animate.css/animate.css',
 	])
 		.pipe(concat('libs.min.css'))
 		.pipe(cssmin())
@@ -33,7 +33,7 @@ gulp.task('style', function () {
 gulp.task('script', function () {
 	return gulp.src([
 		'node_modules/slick-carousel/slick/slick.js',
-		'node_modules/swiper/js/swiper.js'
+
 		
 	])
 		.pipe(concat('libs.min.js'))
