@@ -90,6 +90,11 @@ $(function () {
 
 	});
 
+	$('.menu-burger__link').on('click', function () { 
+		$('.menu-burger').removeClass('active');
+		$('.menu-burger__btn').removeClass('active');
+	});
+
 
 	AOS.init({
 		disable: 'phone',
