@@ -136,19 +136,19 @@ body {
 
 .header-menu {
    background-color: $bg-dark;
-	transition: all 1s;
-	position: relative;
+   transition: all 1s;
+   position: relative;
 
    &.fixed {
       position: fixed;
       width: 100%;
       top: 0;
       background-color: rgba(34, 37, 51, .9);
-		z-index: 1000;
+      z-index: 1000;
 
       .header-menu__inner {
          min-height: 60px;
-		}
+      }
    }
 
    &__inner {
@@ -238,38 +238,40 @@ body {
    width: 100%;
    background-color: rgba(255, 255, 255, 0);
    text-align: center;
-	height: 0;
-	transition: all .7s;
-	display: none;
-	opacity: 0;
-	
-	&.active{
-		background-color: #fff;
-		top: 0;
-		opacity: 1;
-		z-index: 101;
-		.menu-burger__list{
-			top: 0;
-			z-index: 100;
-		}
-	}
+   height: 0;
+   transition: all .7s;
+   display: none;
+   opacity: 0;
 
-	span{
-		font-size: 30px;
-		font-weight: 700;
-		text-transform: uppercase;
-		letter-spacing: 3px;
+   &.active {
+      background-color: #fff;
+      top: 0;
+      opacity: 1;
+      z-index: 101;
+
+      .menu-burger__list {
+         top: 0;
+         z-index: 100;
+      }
+   }
+
+   span {
+      font-size: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 4px;
 		margin-bottom: 20px;
-	}
+		margin-left: 8px;
+   }
 
    &__btn {
       width: 40px;
       height: 4px;
       background-color: #fff;
       position: relative;
-		z-index: 101;
-		transition: all .8s;
-		display: none;
+      z-index: 101;
+      transition: all .8s;
+      display: none;
 
       &:before,
       &:after {
@@ -279,8 +281,8 @@ body {
          background-color: #fff;
          position: absolute;
          top: 12px;
-			z-index: 101;
-			transition: all .8s;
+         z-index: 101;
+         transition: all .8s;
       }
 
       &:after {
@@ -304,15 +306,16 @@ body {
    }
 
    &__list {
-      border-bottom: 20px solid $bg-dark;;
-		background-color: rgba(245, 237, 196, 1);
-		padding: 20px 0 70px 0;
-		width: 100%;
-		position: absolute;		
-		top: -1000%;
-		left: 0;
-		z-index: -1;
+      border-bottom: 20px solid $bg-dark;
+      background-color: rgba(245, 237, 196, 1);
+      padding: 20px 0 70px 0;
+      width: 100%;
+      position: absolute;
+      top: -1000%;
+      left: 0;
+      z-index: -1;
 		border-radius: 0 0 50px 50px;
+		min-height: 100vh;
    }
 
    &__line {
@@ -320,18 +323,18 @@ body {
 
       &+li {
          margin: 15px 0 0 0;
-		}
-		
-		&:first-child{
-			height: 70px;
-		}
+      }
+
+      &:first-child {
+         height: 70px;
+      }
    }
 
    &__link {
       font-size: 20px;
       color: $text-dark;
-		text-transform: uppercase;
-		font-weight: 700;
+      text-transform: uppercase;
+      font-weight: 700;
    }
 }
 
@@ -398,14 +401,14 @@ body {
 
 /* ---------------------------------------- Company*/
 
-.company { 
+.company {
 
    &__content {
       background-image: url(../images/comp-bg.jpg);
       background-repeat: no-repeat;
       background-position: center right;
-		position: relative;
-		padding: 95px 0 35px 0;
+      position: relative;
+      padding: 95px 0 35px 0;
    }
 
    &__pic {
@@ -464,8 +467,8 @@ body {
    &__content {
       display: flex;
       justify-content: space-between;
-		align-items: center;
-		flex-wrap: wrap;
+      align-items: center;
+      flex-wrap: wrap;
    }
 }
 
@@ -536,8 +539,8 @@ body {
    &__content {
       display: flex;
       justify-content: space-between;
-		align-items: center;
-		flex-wrap: wrap;
+      align-items: center;
+      flex-wrap: wrap;
    }
 
    &__title {
@@ -690,13 +693,13 @@ body {
       }
 
       .slick-center {
-				
+
          .slider-item__top {
             background-color: $yellow-bg;
             color: #fff;
             transform: scale(1.2);
-				margin-bottom: 60px;
-				z-index: 100;
+            margin-bottom: 60px;
+            z-index: 100;
 
             &:after {
                border-top: 16px solid $yellow-bg;
@@ -976,12 +979,12 @@ body {
 
    .icon-envelope {
       font-size: 18px;
-	}
-	
+   }
+
 }
 
-.footer__contacts-menu{
-	display: none;
+.footer__contacts-menu {
+   display: none;
 }
 
 @import "media";

@@ -19,21 +19,21 @@ gulp.task('sass', function () {
 		.pipe(browserSync.reload({ stream: true }))
 });
 
-gulp.task('style', function () {
+gulp.task('style', function(){
 	return gulp.src([
-		'node_modules/normalize.css/normalize.css',
+	  'node_modules/normalize.css/normalize.css',
 		'node_modules/slick-carousel/slick/slick.css',
-		'node_modules/animate.css/animate.css',
+		'node_modules/aos/dist/aos.css'
 	])
-		.pipe(concat('libs.min.css'))
-		.pipe(cssmin())
-		.pipe(gulp.dest('app/css'))
-})
+	  .pipe(concat('_libs.scss'))
+	  .pipe(gulp.dest('app/scss'))
+	  .pipe(browserSync.reload({stream: true}))
+ });
 
 gulp.task('script', function () {
 	return gulp.src([
 		'node_modules/slick-carousel/slick/slick.js',
-
+		'node_modules/aos/dist/aos.js',
 		
 	])
 		.pipe(concat('libs.min.js'))
